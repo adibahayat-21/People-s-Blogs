@@ -1,0 +1,117 @@
+/* ==============================
+   Google Font
+============================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ==============================
+   General Reset
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.7;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ==============================
+   Page Header
+============================== */
+h2 {
+    text-align: center;
+    color: #2ca58d;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* ==============================
+   Blog Container
+============================== */
+.blog-full {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-full:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Blog Heading */
+.blog-full h3 {
+    color: #2ca58d;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Blog Content */
+.blog-full p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Author Info */
+.blog-full p.author {
+    font-style: italic;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* ==============================
+   Back Button
+============================== */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2ca58d;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #239270;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media screen and (max-width: 768px) {
+    .blog-full {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .blog-full h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

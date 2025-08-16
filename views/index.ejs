@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People's Blog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>People's Blogs</h1>
+
+    <% data.forEach(a=>{ %>
+    <div class="blog-card">
+        <h3><%= a.heading %></h3>
+        <p><%= a.content %></p>
+        <p class="author">~ <%= a.creator %></p>
+        <div class="blog-actions">
+            <a href="/blogs/<%=a.id%>/view">View</a>
+            <a href="/blogs/<%=a.id%>/edit">Edit</a>
+            <form method="post" action="/blogs/<%=a.id%>?_method=DELETE" style="display:inline;">
+                <button>Delete</button>
+            </form>
+        </div>
+    </div>
+    <% }) %>
+
+    <form id="create-post" method="get" action="/blogs/new">
+        <button>Create New Post</button>
+    </form>
+</body>
+</html>

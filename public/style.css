@@ -1,0 +1,162 @@
+/* ==============================
+   Google Font
+============================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ==============================
+   General Reset
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.7;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ==============================
+   Page Header
+============================== */
+h1 {
+    text-align: center;
+    color: #2ca58d;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ==============================
+   Blog Container
+============================== */
+.blog-card {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Blog Heading */
+.blog-card h3 {
+    color: #2ca58d;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Blog Content */
+.blog-card p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Author Info */
+.blog-card p.author {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* ==============================
+   Actions (View/Edit/Delete)
+============================== */
+.blog-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blog-actions a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2ca58d;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.blog-actions a:hover {
+    background-color: #239270;
+    transform: translateY(-2px);
+}
+
+.blog-actions button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.blog-actions button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   Create New Post Button
+============================== */
+#create-post {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#create-post button {
+    background-color: #2ca58d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#create-post button:hover {
+    background-color: #239270;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media screen and (max-width: 768px) {
+    .blog-card {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .blog-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .blog-actions a, .blog-actions button, #create-post button {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
